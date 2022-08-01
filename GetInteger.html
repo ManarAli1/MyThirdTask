@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <form method="get" action= "<?php echo $_SERVER['PHP_SELF'];?>"> Type Number : <input type="text" name="number">
+
+        <input type="submit">
+
+    </form>
+  
+    <?php
+    $num = (int) $_GET['number'];
+    ?>
+
+</body>
+  
+</html>
