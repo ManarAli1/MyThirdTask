@@ -1,23 +1,23 @@
 //Building database with MySQLi Object-oriented:
 
-<?php
-$name = "name";
-$number = "number";
+<<?php
+  $num = "number";
 
-// Create connection
-$db = new mysqli($name, $number);
-// Check connection
-if ($db->connect_error) {
-  die("Connection failed: " . $db->connect_error);
-}
+  // Create connection
+  $db = new mysqli($num);
+  // Check connection
+  if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
+  }
 
-// Create database
-$sql = "CREATE DATABASE myDB";
-if ($conn->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $db->error;
-}
+  // Create database
+  $sql = "CREATE DATABASE myDB";
+  if ($db->query($sql) === TRUE) {
+    echo "Database created successfully";
+  } 
+  else {
+    echo "Error creating database: " . $db->error;
+  }
 
-$db->close();
+  $db->close();
 ?>
