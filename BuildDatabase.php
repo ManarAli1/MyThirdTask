@@ -11,7 +11,7 @@
   }
 
   // Create database
-  $sql = "CREATE DATABASE myDB";
+  $sql = "CREATE DATABASE MyDB";
   if ($db->query($sql) === TRUE) {
     echo "Database created successfully";
   } 
