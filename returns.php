@@ -15,7 +15,7 @@ body{
 $SERVER ="localhost";
 $username="root";
 $password="";
-$dbname="waad";
+$dbname="manar";
 
   $conn=mysqli_connect($SERVER,$username,$password,$dbname);
                    if(empty($_GET['number'])){
